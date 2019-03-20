@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const submitRoute = require('./ng/routes/submitEntry.route');
-const returnRoute = require('./ng/routes/getScores.route');
+const submitRoute = require('./lib/routes/submitEntry.route');
+const returnRoute = require('./lib/routes/getScores.route');
 
 const app = express();
 
