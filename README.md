@@ -3,12 +3,21 @@
 A simple node.js web service to handle the back-end for a game involving palindromes.
 
 
+## Getting Started
+
+- Clone or download this repo
+- Navigate to project folder and run the following commands:
+- npm install
+- npm start
+- Navigate to http://localhost:3000 in your browser and enjoy!
+
+
 ## Core Functionality
 
 - User enters name and word
 - If word is a palindrome (same backwards as forwards), then a high score
 is recorded. (based on string length).
-- All characters are allowed.
+- Letters and numbers are accepted.
 - Scores are persisted in memory.
 - Score does not increase cumulatively, each score is independent.
 - Multiple players may have the same word.
@@ -29,4 +38,4 @@ test.
 - Proper error handling and visual feedback
 - Same name can't submit same word more than once.
 - Ability to change number of displayed scores, and ability to delete scores.
-- Use of api keys and containerisation for security.
+- Enhanced security features and authentication.

@@ -7,7 +7,7 @@ const returnRoute = require('./lib/routes/getScores.route');
 const app = express();
 
 //mongo connection setup
-let scoresDbUrl = 'mongodb+srv://root:challengesolid@scores-lyqky.mongodb.net/test?retryWrites=true';
+let scoresDbUrl = 'mongodb+srv://dbUser:dbPassword@paliscores-qafll.azure.mongodb.net/test?retryWrites=true';
 const mongoDb = scoresDbUrl;
 mongoose.connect(mongoDb, {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
