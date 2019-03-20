@@ -12,6 +12,7 @@ app.controller('GameController', function($scope, GameService) {
 		GameService.submitEntry(entry)
 			.success(function(points) {
 				$scope.word = undefined;
+				$scope.score = points;
 				GameService.getScores()
 					.success(function(scores) {
 						$scope.scores = scores;

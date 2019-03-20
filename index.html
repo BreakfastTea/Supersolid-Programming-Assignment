@@ -16,6 +16,9 @@
 				<input ng-model="word" class='form-control' placeholder="Word">
 				<button ng-click='submitEntry()' class='btn btn-default'>Submit word</button>
 			</div>
+			<div ng-if="score">
+				<strong>{{score}}</strong> points!
+			</div>
 		</form>
 		<h2>Top Scores</h2>
 		<ul class='list-group'>

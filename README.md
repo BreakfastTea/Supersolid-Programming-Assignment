@@ -35,5 +35,4 @@ some of the syntax ($scope for example). A quick google search sorted me out!).
 
 ## To do
 - Return score when inputting.
-- call get scores again when new score submitted.
 - Multiple score submissions and top score.
