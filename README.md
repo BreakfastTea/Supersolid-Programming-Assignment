@@ -16,7 +16,7 @@ A simple node.js web service to handle the back-end for a game involving palindr
 
 - User enters name and word
 - If word is a palindrome (same backwards as forwards), then a high score
-is recorded. (based on string length).
+is recorded (based on string length).
 - Letters and numbers are accepted.
 - Scores are persisted in memory.
 - Score does not increase cumulatively, each score is independent.
@@ -29,7 +29,8 @@ is recorded. (based on string length).
 confident I would make good use of it here. If I had to take this test again, I
 would have attempted to get back up to speed with mocha/chai before starting the
 test.
-- Confused angular controller with node controllers duh!
+- Some connection issues with MongoDB and using MongoDB Atlas, but nothing a
+quick search couldn't fix.
 - Forgot password to recently created db, but eventually remembered it, also duh!
 
 
