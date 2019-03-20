@@ -1,17 +1,22 @@
-const Submitted = require('../models/submitted.model');
+const Entry = require('../models/entry.model');
+const palindrome = require('../services/palindrome.service');
 
-exports.submit = function (req, res) {
+// controller for submitted entry
+exports.submit = (req, res) => {
   if (!req) {
-    console.log('invalid entry')
+    console.log('invalid entry');
     return;
   }
-    let entry = new Submitted(
+  var score = palindrome.palindromeCheck(req.body.word) || 0;
+  console.log(score);
+  let entry = new Entry(
         {
             name: req.body.name,
-            word: req.body.word
+            word: req.body.word,
+            pointsq: score
         }
     );
-    entry.save(function (err) {
+    entry.save((err) => {
         if (err) {
             return next(err);
         }

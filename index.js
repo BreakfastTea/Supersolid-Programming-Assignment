@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const submitRoute = require('./ng/routes/submitEntry.route');
-const Submitted = require('./ng/models/submitted.model')
+const returnRoute = require('./ng/routes/getScores.route');
 
 const app = express();
 
@@ -19,6 +19,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(express.static(__dirname));
 app.use('/api', submitRoute);
+app.use('/api', returnRoute);
 
 app.get('/', function(req, res) {
 	res.render('index.html');
