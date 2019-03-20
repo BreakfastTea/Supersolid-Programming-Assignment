@@ -31,7 +31,7 @@ would have attempted to get back up to speed with mocha/chai before starting the
 test.
 - Some connection issues with MongoDB and using MongoDB Atlas, but nothing a
 quick search couldn't fix.
-- Forgot password to recently created db, but eventually remembered it, also duh!
+- Forgot password to recently created db, but eventually remembered it!
 
 
 ## Possible future additions
