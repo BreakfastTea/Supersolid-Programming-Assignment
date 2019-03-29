@@ -1,18 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
 const submitRoute = require('./lib/routes/submitEntry.route');
 const returnRoute = require('./lib/routes/getScores.route');
+let cacheHandler = require('./lib/cache/cacheHandler');
+
 
 const app = express();
-
-//mongo connection setup
-let scoresDbUrl = 'mongodb+srv://dbUser:dbPassword@paliscores-qafll.azure.mongodb.net/test?retryWrites=true';
-const mongoDb = scoresDbUrl;
-mongoose.connect(mongoDb, {useNewUrlParser: true});
-mongoose.Promise = global.Promise;
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'Error connecting to DB: '));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -23,6 +16,10 @@ app.use('/api', returnRoute);
 
 app.get('/', function(req, res) {
 	res.render('index.html');
+});
+
+cacheHandler.start(function(err) {
+    if (err) console.error('ho');
 });
 
 var port = 3000;

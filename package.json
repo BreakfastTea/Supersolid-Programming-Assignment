@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "express": "4.16.2",
-    "mongoose": "^5.4.19"
+    "node-cache": "^4.2.0"
   },
   "scripts": {
     "start": "node index.js"
