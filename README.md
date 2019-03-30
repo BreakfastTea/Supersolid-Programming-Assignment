@@ -30,8 +30,11 @@ confident I would make good use of it here. If I had to take this test again, I
 would have attempted to get back up to speed with mocha/chai before starting the
 test.
 - Some connection issues with MongoDB and using MongoDB Atlas, but nothing a
-quick search couldn't fix.
+quick search couldn't fix - turns out I didn't need to use it!
 - Forgot password to recently created db, but eventually remembered it!
+- Used mongoDB when I was meant to persist the scores in memory... oops. I
+thought the wording seemed a bit different but was still a good experience to do
+it both ways.
 
 
 ## Possible future additions
@@ -40,3 +43,4 @@ quick search couldn't fix.
 - Same name can't submit same word more than once.
 - Ability to change number of displayed scores, and ability to delete scores.
 - Enhanced security features and authentication.
+- Use a database.
